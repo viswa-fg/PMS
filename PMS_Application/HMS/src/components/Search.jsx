@@ -36,7 +36,7 @@ const Search = () => {
     try {
       setTimeout(() => {
         if (iframeRef.current?.contentWindow) {
-          iframeRef.current.contentWindow.postMessage(location, "http://13.127.177.129");
+          iframeRef.current.contentWindow.postMessage(location, "http:// 65.0.127.39");
         }
       }, 500);
       setShowIframe(true);
@@ -268,7 +268,7 @@ const Search = () => {
       {showIframe && (
         <iframe
           ref={iframeRef}
-          src="http://13.127.177.129:3001"
+          src="http:// 65.0.127.39:3001"
           width="100%"
           height="600"
           style={{ border: '1px solid #ccc', marginTop: '20px' }}
