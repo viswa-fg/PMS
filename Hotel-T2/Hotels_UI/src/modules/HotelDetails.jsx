@@ -48,7 +48,7 @@ const handleCart = (hotel) => {
   };
 
   // Post message to other app (e.g., running on  65.0.127.39:3000)
-  window.parent.postMessage(bookingData, "http:// 65.0.127.39:3000");
+  window.parent.postMessage(bookingData, "https://65.0.127.39:3000");
 };
 
 

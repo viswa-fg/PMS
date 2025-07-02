@@ -8,7 +8,7 @@ import Header from './components/Header'
 function App() {
   useEffect(() => {
   const handleMessage = (event) => {
-    if (event.origin !== "http:// 65.0.127.39:3001") return;
+    if (event.origin !== "https://65.0.127.39:3001") return;
     console.log("Received hotel data:", event);
     // Use it to populate a booking form, or send to backend
     // console.log(event);

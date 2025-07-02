@@ -7,7 +7,7 @@ const Routings = () => {
     <Routes>
         <Route path='/' element={<Search />} />
       <Route path='train' element={  <iframe
-        src="http:// 65.0.127.39:3002"
+        src="https://65.0.127.39:3002"
         title="Product Microfrontend"
         width="100%"
         height="600px"

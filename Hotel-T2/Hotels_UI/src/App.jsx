@@ -11,7 +11,7 @@ function App() {
  
   useEffect(() => {
     const receiveMessage = async (event) => {
-      if (event.origin !== "http:// 65.0.127.39:3000") {
+      if (event.origin !== "https://65.0.127.39:3000") {
         console.log("Received message from unknown origin:", event.origin);
         return;
       }
@@ -20,7 +20,7 @@ function App() {
       console.log("Received location from parent:", location);
   
       try {
-        const res = await fetch(`http:// 65.0.127.39:8080/api/hotels/search?location=${location}`);
+        const res = await fetch(`https://65.0.127.39:8080/api/hotels/search?location=${location}`);
         const data = await res.json();
   
         console.log("Hotel data fetched from backend:", data); 
